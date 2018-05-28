@@ -31,12 +31,12 @@
 			<groupId>com.github.miemiedev</groupId>
 			<artifactId>mybatis-paginator</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>
 			<artifactId>pagehelper</artifactId>
 		</dependency>
-		
+
 		<!-- MySql -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -48,7 +48,25 @@
 			<artifactId>druid</artifactId>
 		</dependency>
 	</dependencies>
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.xml</include>
+				</includes>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*.xml</include>
+				</includes>
+			</resource>
 
+
+		</resources>
+
+	</build>
 
 </project>
 
